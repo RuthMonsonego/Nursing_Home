@@ -1,4 +1,5 @@
 # Nursing Home Management Application
+![image](https://github.com/user-attachments/assets/1246f0aa-3f14-40f9-804b-dffc7a14c9ab)
 
 ## Overview
 The Nursing Home Management Application is a desktop software solution designed to manage medication for elderly residents in a nursing home. It streamlines communication and processes among healthcare professionals, ensuring efficient medication management and resident care.
@@ -32,3 +33,6 @@ While there is interconnectivity among the classes and forms across the differen
 
 ## Conclusion
 The Nursing Home Management Application aims to enhance the efficiency and quality of medication management in nursing homes, ultimately improving the standard of care for elderly residents.
+
+![image](https://github.com/user-attachments/assets/a1463724-c9e2-41a4-b310-f36de9ee13af)
+
