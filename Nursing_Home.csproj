@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08ECA4A1-1B75-4E48-94E2-4486353B1B5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Nursing_Home</RootNamespace>
+    <AssemblyName>Nursing_Home</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Doctor.cs" />
+    <Compile Include="BLL\DoctorsTable.cs" />
+    <Compile Include="BLL\Elder.cs" />
+    <Compile Include="BLL\EldersTable.cs" />
+    <Compile Include="BLL\Employee_Shifts.cs" />
+    <Compile Include="BLL\Employee_Shifts_Table.cs" />
+    <Compile Include="BLL\GeneralRow.cs" />
+    <Compile Include="BLL\GeneralTable.cs" />
+    <Compile Include="BLL\Medicine.cs" />
+    <Compile Include="BLL\MedicinesTable.cs" />
+    <Compile Include="BLL\Medicines_Of_Elders.cs" />
+    <Compile Include="BLL\Medicines_Of_Elders_Table.cs" />
+    <Compile Include="BLL\Medicines_Take_Table.cs" />
+    <Compile Include="BLL\Medicine_Take.cs" />
+    <Compile Include="BLL\MyDB.cs" />
+    <Compile Include="BLL\Nurse.cs" />
+    <Compile Include="BLL\NursesTable.cs" />
+    <Compile Include="BLL\Shift.cs" />
+    <Compile Include="BLL\ShiftsTable.cs" />
+    <Compile Include="BLL\Treat.cs" />
+    <Compile Include="BLL\Types_Of_Medicines.cs" />
+    <Compile Include="BLL\Types_Of_Medicines_Table.cs" />
+    <Compile Include="BLL\Validation.cs" />
+    <Compile Include="DAL\Connect.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AddDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AddDN.Designer.cs">
+      <DependentUpon>AddDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AddElder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AddElder.Designer.cs">
+      <DependentUpon>AddElder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AddMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AddMedicine.Designer.cs">
+      <DependentUpon>AddMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AddMedicineOfElder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AddMedicineOfElder.Designer.cs">
+      <DependentUpon>AddMedicineOfElder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DeleteDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DeleteDoctor.Designer.cs">
+      <DependentUpon>DeleteDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DirectorPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DirectorPage.Designer.cs">
+      <DependentUpon>DirectorPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DoctorsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DoctorsPage.Designer.cs">
+      <DependentUpon>DoctorsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ElderPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ElderPage.Designer.cs">
+      <DependentUpon>ElderPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MyShifts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MyShifts.Designer.cs">
+      <DependentUpon>MyShifts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NursesPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\NursesPage.Designer.cs">
+      <DependentUpon>NursesPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCshift.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCshift.Designer.cs">
+      <DependentUpon>UCshift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UpdateOrderingMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\UpdateOrderingMedicine.Designer.cs">
+      <DependentUpon>UpdateOrderingMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\AddDN.resx">
+      <DependentUpon>AddDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\AddElder.resx">
+      <DependentUpon>AddElder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\AddMedicine.resx">
+      <DependentUpon>AddMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\AddMedicineOfElder.resx">
+      <DependentUpon>AddMedicineOfElder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DeleteDoctor.resx">
+      <DependentUpon>DeleteDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DirectorPage.resx">
+      <DependentUpon>DirectorPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DoctorsPage.resx">
+      <DependentUpon>DoctorsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ElderPage.resx">
+      <DependentUpon>ElderPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MyShifts.resx">
+      <DependentUpon>MyShifts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NursesPage.resx">
+      <DependentUpon>NursesPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UCshift.resx">
+      <DependentUpon>UCshift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UpdateOrderingMedicine.resx">
+      <DependentUpon>UpdateOrderingMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DAL\Nursing_Home.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\לוגו-קשיש.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
